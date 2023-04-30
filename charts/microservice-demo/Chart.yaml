@@ -1,0 +1,6 @@
+apiVersion: v2
+name: microservice-demo
+description: Microservice Demo for testing Distributed Tracing
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

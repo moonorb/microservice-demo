@@ -12,7 +12,6 @@ microservices-demo.iws
 
 
 target/
-charts/
 
 # Ignore OS generated files #
 .DS_Store
