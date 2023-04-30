@@ -21,6 +21,12 @@ helm install my-demo . -f values.yaml  -n microservice-demo
 
 Accounts can be accessed from the web service: http://web.<your.fqdnhere>
 
+If you have Distributed Trace deployed in your cluster,  the following request will result in spans from 2 services 
+
+```
+curl http://web.moonorb.cloud/accounts/owner/Keri
+```
+
 
 
 
