@@ -7,7 +7,7 @@ The original Java Code supported only docker([Paul Chapman's GitHub](https://git
 
 This repo has some minor edits so it support Microservice Architecture and can be deployed in a K8s cluster. 
 
-![Alt text](https://github.com/moonorb/microservice-demo/images/microservice-demo.PNG)
+![Alt text](https://github.com/moonorb/microservice-demo/blob/main/images/microservice-demo.PNG)
 
 ### Microservice-Demo 
 
