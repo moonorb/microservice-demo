@@ -13,6 +13,7 @@ This repo has some minor edits so it support Microservice Architecture and can b
 
 ```
 kubectl create ns microservice-demo
+cd charts/microservice-demo/
 helm install my-demo . -f values.yaml  -n microservice-demo
 ```
 - There should be 3 pods running without any errors. 
