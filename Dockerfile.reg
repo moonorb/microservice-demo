@@ -1,0 +1,4 @@
+FROM openjdk:8-jre
+ADD target/microservices-demo-2.1.0.RELEASE.jar app.jar
+EXPOSE 1111
+ENTRYPOINT ["java","-jar","/app.jar","reg"]

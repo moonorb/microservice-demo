@@ -42,6 +42,7 @@ public class WebServer {
 
         // Tell server to look for web-server.properties or web-server.yml
         System.setProperty("spring.config.name", "web-server");
+        System.setProperty("ACCOUNTS_SERVICE_URL", "http://accounting/accounts");
         SpringApplication.run(WebServer.class, args);
     }
 
