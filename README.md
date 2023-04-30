@@ -9,5 +9,12 @@ This repo has some minor edits so it support Microservice Architecture and can b
 
 ![Alt text](https://github.com/moonorb/microservice-demo/blob/main/images/microservice-demo.PNG)
 
-### Microservice-Demo 
+### Deploy Microservice-Demo on Kubernetes
+
+```
+kubectl create -f k8s/ -n microservice-demo
+```
+
+
+
 

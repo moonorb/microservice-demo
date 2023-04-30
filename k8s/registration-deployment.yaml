@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: registration
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: registration
+  template:
+    metadata:
+      labels:
+        app: registration
+      annotations:
+        instrumentation.opentelemetry.io/inject-java: "observability/moonorb-instrumentation"  
+    spec:
+      containers:
+      - name: registration
+        image: moonorb/registration:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 1111
+

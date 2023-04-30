@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+      annotations:
+        instrumentation.opentelemetry.io/inject-java: "observability/moonorb-instrumentation"    
+    spec:
+      containers:
+      - name: web
+        image: moonorb/web:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3333
+        env:
+        - name: REGISTRATION_SERVER_HOSTNAME
+          value: registration.microservice-demo.svc.cluster.local
+        - name: _JAVA_OPTIONS
+          value: -Deureka.instance.hostName=web
+
+
+
