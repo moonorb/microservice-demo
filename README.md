@@ -12,6 +12,7 @@ This repo has some minor edits so it support Microservice Architecture and can b
 ### Deploy Microservice-Demo on Kubernetes
 
 ```
+git clone https://github.com/moonorb/microservice-demo.git
 kubectl create ns microservice-demo
 cd charts/microservice-demo/
 helm install my-demo . -f values.yaml  -n microservice-demo
